@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+   /* outline: 1px solid red; */
+    /* border: none !important; */
+}
+
+img{
+max-width: 100%;
+}
+
+html{
+    background-color: rgb(245, 245, 245);
+    background-image: url("../images/header/bg_img/bg7.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    
+    box-sizing: border-box;
+}
+
+
+/* --------------------網頁最上方浮動menubar-------------------- */
+
+
+div.menubar{
+    width: 100%;
+    /* height: 100vh; */
+    /* border: 10px solid orange; */
+    background-image: url("../images/header/menubar.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 40;
+    position: sticky;    
+    top: 0;
+    height: 94px;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+}
+
+.menubar > .menubar_icon{
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    width: 140px;
+    display: flex;
+    /* border: 2px solid blue; */
+}
+
+.menubar > .menubar_icon > a img{
+    /* border: 2px solid rgb(171, 171, 233); */
+    /* margin-right: 15px; */
+    width: 60%;
+    margin: 0 15px 0 15px;
+    /* height: 40px; */
+    opacity: 0.5;
+}
+
+.menubar > .menubar_icon > a img:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+
+/* div.menubar > img .menubar_img{
+    min-width: 1200px;
+} */
+
+
+
+/* --------------------header區塊-------------------- */
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    min-width: 1200px;
+    width: 100%;
+}
+
+.banner{
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    /* background-position: center center; */
+    background-image: url("../images/header/banner.jpg");
+    /* display: flex; */
+    background-size: cover;
+    position: relative;
+    /* border: 2px solid red; */
+}    
+
+
+.banner > .logo{
+    /* position: absolute;
+    top: 20px;
+    left: 20px; */
+    /* max-width: 100%; */
+    width: 200px;
+    padding: 20px;
+    position: fixed;    
+    top: 20px;
+    left: 20px;
+    /* margin-top: 0; */
+    /* border: 2px solid rgb(117, 241, 60); */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    z-index: 50;
+}
+
+
+.banner > .banner_txt{
+    /* border: 2px solid rgb(117, 241, 60); */
+    position: absolute;
+    transform: translate(-50%, -50%) ;
+    top: 50%;
+    left: 50%;
+    
+}
+
+
+
+
+
+
+
+/* --------------------下方導覽列-------------------- */
+
+div.nav_bg{
+    width: 100%;
+    background-color: #ECC7C7;
+    border-radius: 0 0 30px 30px;
+    /* width: 100%; */
+    height: 60px;
+    margin-bottom: 80px;
+}
+
+
+.nav_bg > nav.nav{
+    /* border: 2px solid rgb(234, 0, 255); */
+    margin: 0 auto 90px;
+    text-align: center;
+    line-height: 40px;
+    width: 1200px;    
+    /* border: 1px solid rgb(23, 214, 240); */
+}
+
+.nav_bg > nav.nav > ul.nav_link_list{
+    list-style: none;
+    margin: 0;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* background-color: #ECC7C7;
+    border-radius: 0 0 30px 30px; */
+    width: 100%;
+    height: 60px;
+    /* text-align: center;
+    line-height:100px; */
+    width: 1200px;   
+    /* border: 1px solid rgb(0, 255, 34); */
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li{
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li > a{
+    /* border: 1px solid red; */
+    /* display: inline-block; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    font-family: "Heiti TC", "sans-serif";
+    color: rgb(32, 1, 1);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    display: inline-block;
+    /* text-align: center; */
+    /* min-width: 100px; */
+    /* text-align: center; */
+    /* display: block;  */
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li > a:hover {
+    /* background-color: #eb8686; */
+    color:rgb(243, 124, 124);
+}
+
+
+
+
+main{
+    width: 1200px;
+    margin-left: auto ;
+    margin-right: auto ;
+    border: 1px solid rgb(11, 47, 250);
+}
+
+
+.title{
+    border: 1px solid rgb(11, 47, 250);
+    width: 200px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+
+.style1{
+    border: 10px solid rgb(11, 250, 190);
+    width: 1200px;
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+}
+
+.style1 > .style_txt1{
+    border: 1px solid rgb(250, 11, 238);
+    width: 26%;
+    position: absolute;
+    left: 15%;
+    top: 50px;
+    z-index: 10;
+    /* display: flex; */
+}
+
+.style1 > .style_txt1 > .style_box1 h1{
+    /* border: 1px solid rgb(250, 47, 11); */
+    font-family: "Heiti TC", "sans-serif";
+    font-size: 30px;
+    color: rgb(223, 145, 145);
+    margin-bottom: 10px;
+}
+
+
+.style1 > .style_txt1 > .style_box1 p{
+    /* border: 1px solid rgb(250, 47, 11); */
+    font-family: "Heiti TC", "sans-serif","Microsoft JhengHei";
+    font-size: 20px;
+    text-align: justify;
+    text-justify: auto;
+    letter-spacing: 0.8px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+.style1 > .style_txt1 a{
+    display: inline-block;
+    font-size: 0px;
+}
+
+.style1 > .style_txt1 > .style_button img{
+    width: 80px;
+    border: 2.5px solid rgb(255, 236, 236, 0.5);
+    border-radius: 35%;
+    display: inline-block;    
+    /* font-size: 0px; */
+    /* display: flex;     */
+    /* margin:0px auto; */
+    border: 1px solid rgb(250, 47, 11);
+}
+
+.style1 > .style_txt1 > .style_button img:hover{
+    box-shadow: 0 0 15px 5px rgb(122, 59, 59);
+}
+
+
+.style1 > .round1{
+    width: 430px;
+    height: 430px;
+    background: #EDEDED;
+    /* -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; */
+    border-radius: 50%;
+    position: absolute;
+    left: 4%;
+    top: 3%;
+}
+
+
+
+.style1 > .style_img1{
+    border: 10px solid rgb(250, 47, 11);
+    width: 40%;
+    position: relative;
+    position: absolute;
+    right: 10%;
+    /* vertical-align: bottom; */
+}
+
+
+.style1 > .style_img1 .style_base{
+    border: 1px solid rgb(11, 35, 250);
+    /* position: absolute; */
+    /* left: 0px; */
+    /* vertical-align: bottom; */
+}
+
+
+.style1 > .style_img1 .style_people{
+    border: 1px solid rgb(11, 35, 250);
+    position: absolute;
+    right: 0px;
+    /* vertical-align: bottom; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------footer 區塊------------------- */
+
+footer{
+    width: 1200px;
+    margin: 0px auto;
+    /* border: 1px solid rgb(10, 230, 76); */
+    padding: 50px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+}
+
+
+footer > .contact{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+    /* border: 1px solid rgb(32, 10, 230); */
+    
+    /* display: inline-block; */
+}
+
+footer > .contact .footer_logo{
+    margin: 10px;
+    width: 70%;
+    /* border: 1px solid rgb(28, 230, 10); */
+    opacity: 0.7;
+}
+
+footer > .contact .footer_logo:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+
+footer > .contact a{
+    display: inline-block;
+    /* border: 1px solid rgb(230, 190, 10); */
+    font-size: 0px;
+}
+
+
+footer > .contact h3{
+    /* border: 1px solid rgb(10, 142, 230); */
+    font-family: "Heiti TC", "sans-serif";
+    font-size: 15px;
+    /* display: inline; */
+    margin: 10px 0 10px 0;
+    color: rgb(97, 96, 96);
+}
+
+
+footer .footer_icon img{
+    /* border: 1px solid rgb(230, 10, 113); */
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 10px 15px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+footer .footer_icon img:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+

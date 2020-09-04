@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+   /* outline: 1px solid red; */
+    /* border: none !important; */
+}
+
+img{
+max-width: 100%;
+}
+
+html{
+    background-color: rgb(245, 245, 245);
+    background-image: url("../images/pickup_page/pickup_bg.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+/* --------------------網頁最上方浮動menubar-------------------- */
+
+
+div.menubar{
+    width: 100%;
+    /* height: 100vh; */
+    /* border: 10px solid orange; */
+    background-image: url("../images/header/menubar.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 40;
+    position: sticky;    
+    top: 0;
+    height: 94px;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+}
+
+.menubar > .menubar_icon{
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    width: 140px;
+    display: flex;
+    /* border: 2px solid blue; */
+}
+
+.menubar > .menubar_icon > a img{
+    /* border: 2px solid rgb(171, 171, 233); */
+    /* margin-right: 15px; */
+    width: 60%;
+    margin: 0 15px 0 15px;
+    /* height: 40px; */
+    opacity: 0.5;
+}
+
+.menubar > .menubar_icon > a img:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+
+/* div.menubar > img .menubar_img{
+    min-width: 1200px;
+} */
+
+
+
+/* --------------------banner / header區塊-------------------- */
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    min-width: 1200px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.banner{
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    /* background-position: center center; */
+    background-image: url("../images/header/banner.jpg");
+    /* display: flex; */
+    background-size: cover;
+    position: relative;
+    /* border: 2px solid red; */
+}    
+
+
+.banner > .logo{
+    /* position: absolute;
+    top: 20px;
+    left: 20px; */
+    /* max-width: 100%; */
+    width: 200px;
+    padding: 20px;
+    position: fixed;    
+    top: 20px;
+    left: 20px;
+    /* margin-top: 0; */
+    /* border: 2px solid rgb(117, 241, 60); */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    z-index: 50;
+}
+
+
+.banner > .banner_txt{
+    /* border: 2px solid rgb(117, 241, 60); */
+    position: absolute;
+    transform: translate(-50%, -50%) ;
+    top: 50%;
+    left: 50%;
+    
+}
+
+
+
+
+
+
+
+/* --------------------下方導覽列-------------------- */
+
+div.nav_bg{
+    width: 100%;
+    background-color: #ECC7C7;
+    border-radius: 0 0 30px 30px;
+    /* width: 100%; */
+    height: 60px;
+    margin-bottom: 80px;
+}
+
+
+.nav_bg > nav.nav{
+    /* border: 2px solid rgb(234, 0, 255); */
+    margin: 0 auto 90px;
+    text-align: center;
+    line-height: 40px;
+    width: 1200px;    
+    /* border: 1px solid rgb(23, 214, 240); */
+}
+
+.nav_bg > nav.nav > ul.nav_link_list{
+    list-style: none;
+    margin: 0;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* background-color: #ECC7C7;
+    border-radius: 0 0 30px 30px; */
+    width: 100%;
+    height: 60px;
+    /* text-align: center;
+    line-height:100px; */
+    width: 1200px;   
+    /* border: 1px solid rgb(0, 255, 34); */
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li{
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */  
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li.pickup{
+    /* border: 1px solid red;  */
+    background-color: rgb(231, 172, 172);
+}
+
+.nav_bg > nav.nav > ul.nav_link_list > li.pickup a:hover{
+    color: white;
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li > a{
+    /* border: 1px solid red; */
+    /* display: inline-block; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    font-family: "Heiti TC", "sans-serif";
+    color: rgb(32, 1, 1);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    display: inline-block;
+    /* text-align: center; */
+    /* min-width: 100px; */
+    /* text-align: center; */
+    /* display: block;  */
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li > a:hover {
+    /* background-color: #eb8686; */
+    color:rgb(243, 124, 124);
+}
+
+
+
+/* --------------------title-------------------- */
+
+body{
+    /* background-image: url(../images/shoplist_page/shoplist_bg.png); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+    /* overflow-x: hidden; */
+}
+
+
+
+
+main{
+    width: 1200px;
+    margin-left: auto ;
+    margin-right: auto ;
+    /* border: 1px solid rgb(11, 47, 250); */
+
+}
+
+
+.title{
+    /* border: 1px solid rgb(11, 47, 250); */
+    width: 25%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+
+
+
+/* --------------------pick up 區域-------------------- */
+
+
+
+.pickup_all{
+    /* border: 1px solid rgb(11, 47, 250);  */
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.pickup_all > .pickup{
+    width: 360px;
+    margin: 20px 20px 50px 20px;
+    /* border: 1px solid rgb(11, 47, 250); */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+
+}
+
+
+.pickup_all > .pickup > .pickup_img{
+    /* width: 450px;  */
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    border: 5px solid #E8C3C3;
+    border-radius: 12%;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    box-shadow: 3px 3px 7px 5px #a09b9b;
+}
+
+
+/* .pickup_all > .pickup > .pickup_img:hover{
+    opacity: 0.8;
+} */
+
+
+.pickup_all > .pickup > .pickup_img img{
+    /* border: 1px solid rgb(250, 11, 130); */
+    /* margin: auto; */
+    margin-top: 15px;
+    width: 80%;
+}
+
+.pickup_all > .pickup > .pickup_img img:hover{
+    opacity: 0.5;
+}
+
+
+
+.pickup_txt{
+    /* border: 1px solid rgb(14, 248, 119); */
+    padding: 5px;
+}
+
+ 
+.pickup_txt h1{
+    /* border: 1px solid rgb(248, 119, 14);  */
+    font-family: "Heiti TC", "sans-serif";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    color: rgb(31, 17, 17);
+    /* margin:0px auto; */
+    text-align: center;
+    color: rgb(73, 69, 69);
+}
+
+
+
+.pickup_txt p{
+    /* border: 1px solid rgb(0, 195, 255);  */
+    font-family: "小塚ゴシック Pr6N R","Heiti TC", "sans-serif";
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 35px;
+    color: rgb(32, 19, 19);
+    /* margin:0px auto; */
+    text-align: center;
+    color: rgb(73, 69, 69);
+}
+
+
+
+
+.pickup_all > .pickup > .cart_button{
+    
+    /* border: 1px solid rgb(255, 230, 0);  */
+    margin: auto;
+    width: 150px;
+    
+}
+
+
+.pickup_all > .pickup > .cart_button img{
+    border: 5px solid rgb(255, 255, 255, 0.9); 
+    background-color: white;
+    border-radius: 6%;
+    /* box-shadow: 5px 5px 10px 5px #a09b9b; */
+}
+
+.pickup_all > .pickup > .cart_button:hover{
+    filter: drop-shadow(0px 0px 8px rgba(122, 59, 59));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------footer 區塊------------------- */
+
+footer{
+    width: 1200px;
+    margin: 0px auto;
+    /* border: 1px solid rgb(10, 230, 76); */
+    padding: 50px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+}
+
+
+footer > .contact{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+    /* border: 1px solid rgb(32, 10, 230); */
+    
+    /* display: inline-block; */
+}
+
+footer > .contact .footer_logo{
+    margin: 10px;
+    width: 70%;
+    /* border: 1px solid rgb(28, 230, 10); */
+    opacity: 0.7;
+}
+
+footer > .contact .footer_logo:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+
+footer > .contact a{
+    display: inline-block;
+    /* border: 1px solid rgb(230, 190, 10); */
+    font-size: 0px;
+}
+
+
+footer > .contact h3{
+    /* border: 1px solid rgb(10, 142, 230); */
+    font-family: "Heiti TC", "sans-serif";
+    font-size: 15px;
+    /* display: inline; */
+    margin: 10px 0 10px 0;
+    color: rgb(97, 96, 96);
+}
+
+
+footer .footer_icon img{
+    /* border: 1px solid rgb(230, 10, 113); */
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 10px 15px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+footer .footer_icon img:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
