@@ -1,3 +1,5 @@
+@import "../common/fonts.css";
+
 * {
     box-sizing: border-box;
    /* outline: 1px solid red; */
@@ -37,26 +39,33 @@ div.menubar{
     z-index: 40;
     position: sticky;    
     top: 0;
-    height: 103px;
+    height: 99px;
     background-repeat: no-repeat;
     min-width: 1200px;
 }
 
 .menubar > .menubar_icon{
     position: absolute;
-    top: 20px;
+    top: 28px;
     right: 10px;
+    width: 140px;
     display: flex;
+    justify-content: space-around;
     /* border: 2px solid blue; */
 }
 
+
+.menubar > .menubar_icon > a{
+    width: 28px;
+}
+
+
 .menubar > .menubar_icon > a img{
     /* border: 2px solid rgb(171, 171, 233); */
-    /* margin-right: 15px; */
-    width: 60%;
-    margin: 0 15px 0 15px;
-    /* height: 40px; */
+    width: 100%;
     opacity: 0.5;
+    vertical-align: bottom; 
+    /* div包圖片下方完全貼齊  */
 }
 
 .menubar > .menubar_icon > a img:hover{
@@ -90,11 +99,12 @@ header{
     background-repeat: no-repeat;
 
     /* background-position: center center; */
-    background-image: url("../images/header/banner.jpg");
+    background-image: url("../images/style_page/banner5.jpg");
     /* display: flex; */
     background-size: cover;
     position: relative;
     /* border: 2px solid red; */
+    /* opacity: 0.8; */
 }    
 
 
@@ -113,7 +123,8 @@ header{
     background-color: rgba(255, 255, 255, 0.5);
     /* border: 2px solid red; */
     border-radius: 20px;
-    z-index: 50;
+    z-index: 80;
+    /* opacity: 1; */
 }
 
 
@@ -123,7 +134,7 @@ header{
     transform: translate(-50%, -50%) ;
     top: 50%;
     left: 50%;
-    
+    opacity: 0.5;
 }
 
 
@@ -140,7 +151,7 @@ div.nav_bg{
     border-radius: 0 0 30px 30px;
     /* width: 100%; */
     height: 60px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 
 
@@ -192,30 +203,33 @@ div.nav_bg{
 }
 
 
+
 .nav_bg > nav.nav > ul.nav_link_list > li > a{
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
     color: rgb(32, 1, 1);
     font-size: 25px;
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
     display: inline-block;
-    /* text-align: center; */
-    /* min-width: 100px; */
-    /* text-align: center; */
-    /* display: block;  */
 }
+
+/* .nav_bg > nav.nav > ul.nav_link_list > li > a{
+    font-family: "Calibri Light","Heiti TC", "sans-serif","Microsoft JhengHei";
+    color: rgb(53, 4, 4);
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    display: inline-block;
+} */
 
 
 .nav_bg > nav.nav > ul.nav_link_list > li > a:hover {
     /* background-color: #eb8686; */
     color:rgb(243, 124, 124);
 }
-
 
 
 /* --------------------title-------------------- */
@@ -230,13 +244,25 @@ main{
 }
 
 
-.title{
-    /* border: 1px solid rgb(11, 47, 250); */
-    width: 18%;
+/* .title{
+    width: 300px;
     margin: auto;
     margin-bottom: 60px;
+} */
+
+
+.title{
+    /* border: 1px solid rgb(11, 47, 250); */
+    margin: 90px;
+    display: flex;
+    flex-direction: column;
 }
 
+
+.title img{
+    margin: auto;
+    height: 70px;
+}
 
 /* --------------------style_1 區塊-------------------- */
 
@@ -263,7 +289,8 @@ main{
 
 .style1 > .style_txt1 > .style_box1 h1{
     /* border: 1px solid rgb(250, 47, 11); */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 30px;
     color: rgb(223, 145, 145);
     margin-bottom: 10px;
@@ -272,9 +299,10 @@ main{
 
 .style1 > .style_txt1 > .style_box1 p{
     /* border: 1px solid rgb(250, 47, 11); */
-    font-family: "Heiti TC", "sans-serif","Microsoft JhengHei";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 18px;
-    /* text-align: justify; */
+    text-align: justify;
     /* text-justify: auto; */
     /* letter-spacing: 0.8px; */
     line-height: 30px;
@@ -372,7 +400,8 @@ main{
 
 .style2 > .style_txt2 > .style_box2 h1{
     /* border: 1px solid rgb(250, 47, 11); */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 30px;
     color: rgb(223, 145, 145);
     margin-bottom: 10px;
@@ -381,9 +410,10 @@ main{
 
 .style2 > .style_txt2 > .style_box2 p{
     /* border: 1px solid rgb(250, 47, 11); */
-    font-family: "Heiti TC", "sans-serif","Microsoft JhengHei";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 18px;
-    /* text-align: justify; */
+    text-align: justify;
     /* text-justify: auto; */
     /* letter-spacing: 0.8px; */
     line-height: 30px;
@@ -514,7 +544,8 @@ footer > .contact a{
 
 footer > .contact h3{
     /* border: 1px solid rgb(10, 142, 230); */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 15px;
     /* display: inline; */
     margin: 10px 0 10px 0;

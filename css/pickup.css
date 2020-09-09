@@ -1,3 +1,5 @@
+@import "../common/fonts.css";
+
 * {
     box-sizing: border-box;
    /* outline: 1px solid red; */
@@ -9,7 +11,7 @@ max-width: 100%;
 }
 
 html{
-    background-color: rgb(245, 245, 245);
+    background-color: #f5f5f5;
     background-image: url("../images/pickup_page/pickup_bg.png");
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -41,16 +43,22 @@ div.menubar{
     right: 10px;
     width: 140px;
     display: flex;
+    justify-content: space-around;
     /* border: 2px solid blue; */
 }
 
+
+.menubar > .menubar_icon > a{
+    width: 28px;
+}
+
+
 .menubar > .menubar_icon > a img{
     /* border: 2px solid rgb(171, 171, 233); */
-    /* margin-right: 15px; */
-    width: 60%;
-    margin: 0 15px 0 15px;
-    /* height: 40px; */
+    width: 100%;
     opacity: 0.5;
+    vertical-align: bottom; 
+    /* div包圖片下方完全貼齊  */
 }
 
 .menubar > .menubar_icon > a img:hover{
@@ -84,7 +92,7 @@ header{
     background-repeat: no-repeat;
 
     /* background-position: center center; */
-    background-image: url("../images/header/banner.jpg");
+    background-image: url("../images/pickup_page/banner4.png");
     /* display: flex; */
     background-size: cover;
     position: relative;
@@ -117,7 +125,7 @@ header{
     transform: translate(-50%, -50%) ;
     top: 50%;
     left: 50%;
-    
+    opacity: 0.5;
 }
 
 
@@ -134,7 +142,7 @@ div.nav_bg{
     border-radius: 0 0 30px 30px;
     /* width: 100%; */
     height: 60px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 
 
@@ -186,22 +194,15 @@ div.nav_bg{
 }
 
 
+
 .nav_bg > nav.nav > ul.nav_link_list > li > a{
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
     color: rgb(32, 1, 1);
     font-size: 25px;
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
     display: inline-block;
-    /* text-align: center; */
-    /* min-width: 100px; */
-    /* text-align: center; */
-    /* display: block;  */
 }
 
 
@@ -233,11 +234,23 @@ main{
 }
 
 
-.title{
-    /* border: 1px solid rgb(11, 47, 250); */
+/* .title{
     width: 25%;
     margin: auto;
     margin-bottom: 60px;
+} */
+
+.title{
+    /* border: 1px solid rgb(11, 47, 250); */
+    margin: 90px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title img{
+    margin: auto;
+    height: 70px;
 }
 
 
@@ -307,7 +320,8 @@ main{
  
 .pickup_txt h1{
     /* border: 1px solid rgb(248, 119, 14);  */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 18px;
     font-weight: bold;
     line-height: 35px;
@@ -321,7 +335,8 @@ main{
 
 .pickup_txt p{
     /* border: 1px solid rgb(0, 195, 255);  */
-    font-family: "小塚ゴシック Pr6N R","Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 17px;
     font-weight: bold;
     line-height: 35px;
@@ -414,7 +429,8 @@ footer > .contact a{
 
 footer > .contact h3{
     /* border: 1px solid rgb(10, 142, 230); */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 15px;
     /* display: inline; */
     margin: 10px 0 10px 0;

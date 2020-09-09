@@ -1,3 +1,6 @@
+@import "../common/fonts.css";
+
+
 * {
     box-sizing: border-box;
    /* outline: 1px solid red; */
@@ -22,7 +25,7 @@ html{
 
 
 div.menubar{
-    /* width: 100%; */
+    width: 100%;
     /* height: 100vh; */
     /* border: 10px solid orange; */
     background-image: url("../images/header/menubar.png");
@@ -31,9 +34,9 @@ div.menubar{
     z-index: 40;
     position: sticky;    
     top: 0;
-    height: 94px;
+    height: 99px;
     background-repeat: no-repeat;
-    max-width: 1902px;
+    /* max-width: 1902px; */
     min-width: 1200px;
 }
 
@@ -43,17 +46,33 @@ div.menubar{
     right: 10px;
     width: 140px;
     display: flex;
+    justify-content: space-around;
     /* border: 2px solid blue; */
 }
 
+
+.menubar > .menubar_icon > a{
+    width: 28px;
+}
+
+
 .menubar > .menubar_icon > a img{
     /* border: 2px solid rgb(171, 171, 233); */
-    /* margin-right: 15px; */
-    width: 60%;
-    margin: 0 15px 0 15px;
-    /* height: 40px; */
+    width: 100%;
     opacity: 0.5;
+    vertical-align: bottom; 
+    /* div包圖片下方完全貼齊  */
 }
+
+
+/* .menubar > .menubar_icon > a img{
+    width: 60%;
+    margin: 0 14px 0 14px;
+    opacity: 0.5;
+} */
+
+
+
 
 .menubar > .menubar_icon > a img:hover{
     opacity: 1;
@@ -79,20 +98,22 @@ header{
     min-width: 1200px;
     width: 100%;
     margin-top: -20px;
-    max-width: 1902px;
+    /* max-width: 1902px; */
 }
 
 .banner{
     height: 100vh;
+    width: 100%;
+    min-width: 1200px;
     background-repeat: no-repeat;
 
     /* background-position: center center; */
-    background-image: url("../images/header/banner.jpg");
+    background-image: url("../images/lookbook_page/banner1.png");
     /* display: flex; */
     background-size: cover;
     position: relative;
     /* border: 2px solid red; */
-    
+    /* opacity: 0.7; */
 }    
 
 
@@ -114,7 +135,7 @@ header{
     background-color: rgba(255, 255, 255, 0.5);
     /* border: 2px solid red; */
     border-radius: 20px;
-    z-index: 50;
+    z-index: 70;
 }
 
 
@@ -124,7 +145,7 @@ header{
     transform: translate(-50%, -50%) ;
     top: 50%;
     left: 50%;
-    
+    opacity: 0.5;
 }
 
 
@@ -137,12 +158,12 @@ header{
 
 div.nav_bg{
     /* width: 100%; */
-    background-color: #ECC7C7;
+    background-color: #cac7c7;
     border-radius: 0 0 30px 30px;
-    /* width: 100%; */
+    width: 100%;
     height: 60px;
-    margin-bottom: 80px;
-    max-width: 1902px;
+    /* margin-bottom: 80px; */
+    /* max-width: 1902px; */
     min-width: 1200px;
 }
 
@@ -188,37 +209,38 @@ div.nav_bg{
 
 .nav_bg > nav.nav > ul.nav_link_list > li.lookbook{
     /* border: 1px solid red;  */
-    background-color: rgb(231, 172, 172);
+    background-color: #b8b3b3;
+    
+}
+
+
+.nav_bg > nav.nav > ul.nav_link_list > li.lookbook a{
+    color: rgb(240, 239, 239);
 }
 
 .nav_bg > nav.nav > ul.nav_link_list > li.lookbook a:hover{
-    color: white;
+    color: rgb(61, 60, 60);
 }
 
 
-
 .nav_bg > nav.nav > ul.nav_link_list > li > a{
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
     color: rgb(32, 1, 1);
     font-size: 25px;
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
     display: inline-block;
-    /* text-align: center; */
-    /* min-width: 100px; */
-    /* text-align: center; */
-    /* display: block;  */
 }
+
+
+
 
 
 .nav_bg > nav.nav > ul.nav_link_list > li > a:hover {
     /* background-color: #eb8686; */
-    color:hsl(0, 83%, 72%);
+    /* color:#f37c7c; */
+    color: rgb(61, 60, 60);
 }
 
 
@@ -253,6 +275,7 @@ main{
     width: 100%;
     height: 710px;
     position: relative;
+    margin: 130px auto;
     /* display: flex; */
     /* justify-content: space-around; */
     /* margin: 0 auto ; */
@@ -645,7 +668,8 @@ footer > .contact a{
 
 footer > .contact h3{
     /* border: 1px solid rgb(10, 142, 230); */
-    font-family: "Heiti TC", "sans-serif";
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
     font-size: 15px;
     /* display: inline; */
     margin: 10px 0 10px 0;
