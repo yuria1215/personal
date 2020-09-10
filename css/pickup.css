@@ -1,4 +1,4 @@
-@import "../common/fonts.css";
+@import "../css/common/fonts.css";
 
 * {
     box-sizing: border-box;
@@ -34,7 +34,7 @@ div.menubar{
     top: 0;
     height: 94px;
     background-repeat: no-repeat;
-    min-width: 1200px;
+    min-width: 1140px;
 }
 
 .menubar > .menubar_icon{
@@ -70,7 +70,7 @@ div.menubar{
 
 
 /* div.menubar > img .menubar_img{
-    min-width: 1200px;
+    min-width: 1140px;
 } */
 
 
@@ -82,7 +82,7 @@ div.menubar{
 }
 
 header{
-    min-width: 1200px;
+    min-width: 1140px;
     width: 100%;
     margin-top: -20px;
 }
@@ -151,7 +151,7 @@ div.nav_bg{
     margin: 0 auto 90px;
     text-align: center;
     line-height: 40px;
-    width: 1200px;    
+    width: 1140px;    
     /* border: 1px solid rgb(23, 214, 240); */
 }
 
@@ -169,7 +169,7 @@ div.nav_bg{
     height: 60px;
     /* text-align: center;
     line-height:100px; */
-    width: 1200px;   
+    width: 1140px;   
     /* border: 1px solid rgb(0, 255, 34); */
 }
 
@@ -226,7 +226,7 @@ body{
 
 
 main{
-    width: 1200px;
+    width: 1140px;
     margin-left: auto ;
     margin-right: auto ;
     /* border: 1px solid rgb(11, 47, 250); */
@@ -268,7 +268,7 @@ main{
 
 
 .pickup_all > .pickup{
-    width: 360px;
+    width: 340px;
     margin: 20px 20px 50px 20px;
     /* border: 1px solid rgb(11, 47, 250); */
     display: flex;
@@ -387,7 +387,7 @@ main{
 /* --------------------footer 區塊------------------- */
 
 footer{
-    width: 1200px;
+    width: 1140px;
     margin: 0px auto;
     /* border: 1px solid rgb(10, 230, 76); */
     padding: 50px;
