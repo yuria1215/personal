@@ -1,4 +1,4 @@
-@import "../css/common/fonts.css";
+@import "./css/common/fonts.css";
 
 * {
     box-sizing: border-box;
@@ -95,9 +95,9 @@ header{
 }
 
 .banner{
-    height: 100vh;
+    height: 85vh;
+    min-height: 500px;
     background-repeat: no-repeat;
-
     /* background-position: center center; */
     background-image: url("../images/style_page/banner5.jpg");
     /* display: flex; */
@@ -314,18 +314,26 @@ main{
     font-size: 0px;
 }
 
-.style1 > .style_txt1 > .style_button img{
+.style1 > .style_txt1 > .style_button a{
+    display: inline-block;
     width: 80px;
-    /* border: 2.5px solid rgb(255, 236, 236, 0.5); */
-    border-radius: 35%;
-    display: inline-block;    
-    /* font-size: 0px; */
-    /* display: flex;     */
-    /* margin:0px auto; */
-    /* border: 1px solid rgb(250, 47, 11); */
+    height: 34px;
+    /* border: 3px solid rgb(255 255 255); */
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+    color: rgb(255 255 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    background-color: #C97979;
+    transition: background-color .3s, color .3s;
+    /* text-shadow: 2px 1px 1px #c9b2b2; */
+    box-shadow: 1px 1px 1px 0.5px #c9b2b2;
 }
 
-.style1 > .style_txt1 > .style_button img:hover{
+.style1 > .style_txt1 > .style_button a:hover{
     filter: drop-shadow(0px 0px 8px rgba(122, 59, 59));
 }
 
@@ -425,18 +433,26 @@ main{
     font-size: 0px;
 }
 
-.style2 > .style_txt2 > .style_button img{
+.style2 > .style_txt2 > .style_button a{
+    display: inline-block;
     width: 80px;
-    /* border: 2.5px solid rgb(255, 236, 236, 0.5); */
-    border-radius: 35%;
-    display: inline-block;    
-    /* font-size: 0px; */
-    /* display: flex;     */
-    /* margin:0px auto; */
-    /* border: 1px solid rgb(250, 47, 11); */
+    height: 34px;
+    /* border: 3px solid rgb(255 255 255); */
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+    color: rgb(255 255 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    background-color: #C97979;
+    transition: background-color .3s, color .3s;
+    /* text-shadow: 2px 1px 1px #c9b2b2; */
+    box-shadow: 1px 1px 1px 0.5px #c9b2b2;
 }
 
-.style2 > .style_txt2 > .style_button img:hover{
+.style2 > .style_txt2 > .style_button a:hover{
     filter: drop-shadow(0px 0px 8px rgba(122, 59, 59));
 }
 
@@ -463,6 +479,9 @@ main{
     left: 10%;
     /* vertical-align: bottom; */
 }
+
+
+
 
 
 .style2 > .style_img2 .style_base{

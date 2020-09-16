@@ -1,4 +1,4 @@
-@import "../css/common/fonts.css";
+@import "./common/fonts.css";
 
 * {
     box-sizing: border-box;
@@ -100,11 +100,11 @@ header{
 }
 
 .banner{
-    height: 100vh;
+    height: 85vh;
+    min-height: 500px;
     width: 100%;
     min-width: 1140px;
     background-repeat: no-repeat;
-
     /* background-position: center center; */
     background-image: url("../images/contact_page/banner3.png");
     /* display: flex; */

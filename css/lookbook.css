@@ -1,4 +1,4 @@
-@import "../css/common/fonts.css";
+@import "./css/common/fonts.css";
 
 
 * {
@@ -102,11 +102,11 @@ header{
 }
 
 .banner{
-    height: 100vh;
+    height: 85vh;
+    min-height: 500px;
     width: 100%;
     min-width: 1140px;
     background-repeat: no-repeat;
-
     /* background-position: center center; */
     background-image: url("../images/lookbook_page/banner1.png");
     /* display: flex; */

@@ -1,4 +1,4 @@
-@import "../css/common/fonts.css";
+@import "./css/common/fonts.css";
 
 * {
     box-sizing: border-box;
@@ -84,9 +84,9 @@ header{
 }
 
 .banner{
-    height: 100vh;
+    height: 85vh;
+    min-height: 500px;
     background-repeat: no-repeat;
-
     /* background-position: center center; */
     background-image: url("../images/shoplist_page/banner2.png");
     /* display: flex; */

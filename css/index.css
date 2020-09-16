@@ -1,4 +1,4 @@
-@import "../css/common/fonts.css";
+@import "./common/fonts.css";
 
 
 * {
@@ -94,12 +94,15 @@ header{
     min-width: 1140px;
     width: 100%;
     margin-top: -20px;
+    /* border: 1px solid red; */
+    /* height: 100vh; */
 }
 
-.banner{
-    height: 100vh;
-    background-repeat: no-repeat;
 
+.banner{
+    height: 85vh;
+    min-height: 500px;
+    background-repeat: no-repeat;
     /* background-position: center center; */
     background-image: url("../images/header/banner.jpg");
     /* display: flex; */
@@ -289,20 +292,38 @@ main{
 
 
 
-.style > .all_box > .round_txt > a{
-    
-    
-    /* left: 0px; */
-    /* display: flex; */
-    /* z-index: 1; */
+/* .style > .all_box > .round_txt > a{
     width: 24%;
-    /* border: 1px solid rgb(136, 17, 247); */
+    border: 1px solid rgb(136, 17, 247);
     display: inline-block;
     position: absolute;
     left: 67px;
     top: 280px;
     border-radius: 30px;
+} */
+
+.style > .all_box > .round_txt > a{
+    display: inline-block;
+    width: 64px;
+    height: 27px;
+    border: 2.5px solid rgb(255 255 255);
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+    color: rgb(255 255 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 21px;
+    /* background-color: rgba(255, 68, 0 , 0%); */
+    position: absolute;
+    left: 67px;
+    top: 280px;
+    transition: background-color .3s, color .3s;
+    text-shadow: 2px 1px 1px #C97979;
+    box-shadow: 2px 1px 1px #C97979;
 }
+
 
 
 .style > .all_box > .round_txt > a:hover {
@@ -743,27 +764,40 @@ p.shop_name{
 
 .shoplist_more{
     /* border: 1px solid red; */
-    width: 101px;
+    width: 130px;
     margin: 0 auto;
     display: block;
 }
 
 
 .shoplist_more a{
-    font-size: 0px;
-    /* border: 1px solid red; */
-    display: inline-block;    
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    border: 3px solid rgb(255 255 255);
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+    color: rgb(255 255 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: #C97979;
+    transition: background-color .3s, color .3s;
+    text-shadow: 2px 1px 1px #c9b2b2;
+    box-shadow: 2px 1px 1px 0.5px #c9b2b2;
 }
 
-.shoplist_more img{
+/* .shoplist_more img{
     width: 100px;
     border: 3px solid rgb(255, 236, 236);
     border-radius: 35%;
     display: inline-block;    
 
-}
+} */
 
-.shoplist_more img:hover{
+.shoplist_more a:hover{
     box-shadow: 0 0 15px 5px rgb(122, 59, 59);
 }
 
@@ -912,24 +946,47 @@ p.shop_name{
     margin: 10px 0 30px 0;
 }
 
+
+
 .pickup a{
     display: inline-block;
     font-size: 0px;
     /* border: 1px solid #00f1c9; */
 }
 
-.pickup_more img{
+
+
+/* .pickup_more img{
     width: 100px;
     border: 3px solid rgb(255, 236, 236);
     border-radius: 35%;
     display: inline-block;    
-    /* font-size: 0px; */
     display: flex;    
     margin-left: 0px;
-    
+} */
+
+
+.pickup > .pickup_more a{
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    border: 3px solid rgb(255 255 255);
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+    color: rgb(255 255 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: #C97979;
+    transition: background-color .3s, color .3s;
+    text-shadow: 2px 1px 1px #c9b2b2;
+    box-shadow: 2px 1px 1px 0.5px #c9b2b2;
 }
 
-.pickup_more img:hover{
+
+.pickup > .pickup_more a:hover{
     box-shadow: 0 0 15px 5px rgb(122, 59, 59);
 }
 
