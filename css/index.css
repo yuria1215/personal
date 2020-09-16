@@ -94,13 +94,13 @@ header{
     min-width: 1140px;
     width: 100%;
     margin-top: -20px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* height: 100vh; */
 }
 
 
 .banner{
-    height: 85vh;
+    /* height: 85vh; */
     min-height: 500px;
     background-repeat: no-repeat;
     /* background-position: center center; */
