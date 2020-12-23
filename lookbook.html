@@ -8,10 +8,8 @@
 
     <link href="./css/lookbook.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/header/web_icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <style>
-
-    </style>
 
 </head>
 
@@ -20,22 +18,48 @@
 <body>
 
 
+    <!-- --------------------meaubar-------------------- -->
+
+
     <div class="menubar">
-        <!-- <img src="./images/header/menubar.png" class="menubar_img" alt=""> -->
         <div class="menubar_icon">
-            <a href="#"><img src="./images/header/icon1_menu.png" alt=""></a>
             <a href="#"><img src="./images/header/icon2_people.png" alt=""></a>
             <a href="#"><img src="./images/header/icon3_cart.png" alt=""></a>
         </div>
+
+        <!-- --------------------漢堡區塊-------------------- -->
+
+        <div id="navbar-icon">
+            <div class="navbar-open-icon">
+                <div class="line top"></div>
+                <div class="line middle"></div>
+                <div class="line bottom"></div>
+            </div>
+        </div>
+
+        <div class="nav-main close">
+            <div class="nav-close-icon">
+                <div class="icon-line"></div>
+                <div class="icon-line transform"></div>
+            </div>
+
+            <div class="nav-links">
+                <p class="nav-title"><span>menu</span></p>
+                <div class="nav-line"></div>
+                <a href="./style.html"><span class="slide-out">STYLE</span></a>
+                <a href="./shoplist.html"><span class="slide-out">SHOP LIST</span></a>
+                <a href="./lookbook.html"><span id="thispage" class="slide-out">LOOKBOOK</span></a>
+                <a href="./pickup.html"><span class="slide-out">PICK UP</span></a>
+                <a href="./contact.html"><span class="slide-out">CONTACT</span></a>
+            </div>
+        </div>
+
     </div>
 
+    <!-- --------------------banner-------------------- -->
 
     <header>
-
-
         <div class="banner">
-
-
 
             <div class="logo">
                 <a href="./index.html"><img src="./images/header/logo.png" class="logo" alt=""></a>
@@ -44,53 +68,38 @@
             <div class="banner_txt">
                 <img src="./images/header/banner_txt.png" class="banner_txt" alt="">
             </div>
-
-
-            <!-- <div class="br_txt">
-                <h1>LADY'S CLOSET TOKYO</h1>
-            </div> -->
-
-            <!-- 背景圖片 -->
-
         </div>
 
-        <!-- <div class="banner"></div> -->
-
-
         <div class="nav_bg">
-
-            <nav class="nav">
-
+            <nav class="navbox">
                 <ul class="nav_link_list">
-
                     <li><a href="./style.html">STYLE</a></li>
                     <li><a href="./shoplist.html">SHOP LIST</a></li>
                     <li class="lookbook"><a href="./lookbook.html">LOOKBOOK</a></li>
                     <li><a href="./pickup.html">PICK UP</a></li>
                     <li><a href="./contact.html">CONTACT</a></li>
-
                 </ul>
             </nav>
         </div>
-
     </header>
 
+    <a href="#top" class="back_to_top">^</a>
 
-
+    <!-- ------------------shoplist----------------- -->
 
     <main>
 
-        
+
         <div class="lookbook_box1">
 
-            
+
             <p class="lookbook_txt1">lookbook</p>
             <p class="lookbook_txt2">lookbook</p>
             <p class="lookbook_txt3">lookbook</p>
-            
+
 
             <div class="img1">
-                <img class="1" src="./images/lookbook_page/img1.jpg" alt="" >
+                <img src="./images/lookbook_page/img1.jpg" alt="">
             </div>
 
         </div>
@@ -99,53 +108,51 @@
 
         <div class="lookbook_box2">
 
+
+
+
             <div class="img2">
-                <img class="2" src="./images/lookbook_page/img2.jpg" alt="" >
+                <img src="./images/lookbook_page/img2.jpg" alt="">
             </div>
 
 
             <div class="img3">
-                <img class="3" src="./images/lookbook_page/img3.jpg" alt="" >
+                <img src="./images/lookbook_page/img3.jpg" alt="">
             </div>
-
-
-            <div class="round1"></div>
 
         </div>
 
-
+        <!-- <div class="round1"></div> -->
 
         <div class="lookbook_box3">
-            
+
 
             <div class="img4">
-                <img class="4" src="./images/lookbook_page/img4.jpg" alt="" >
+                <img src="./images/lookbook_page/img4.jpg" alt="">
             </div>
 
 
             <!-- <div class="round2"></div> -->
 
-            <div class="round3"></div>
+            <!-- <div class="round3"></div> -->
 
         </div>
-        
-        
+
+
 
         <div class="lookbook_box4">
 
             <h1>find your style</h1>
-            
+
             <div class="img5">
-                <img class="5" src="./images/lookbook_page/img5.jpg" alt="" >
+                <img src="./images/lookbook_page/img5.jpg" alt="">
             </div>
-
-            <div class="img6">
-                <img class="6" src="./images/lookbook_page/img6.jpg" alt="" >
-            </div>
-
             <!-- <video src="./images/lookbook/lookbook.mp4" id="backMove"></video> -->
-           
-        
+
+        </div>
+
+        <div class="img6">
+            <img src="./images/lookbook_page/img6.jpg" alt="">
         </div>
 
     </main>
@@ -153,30 +160,30 @@
 
 
 
-    
+
 
 
 
 
     <footer>
 
-    <div class="contact">
-        <a href="./contact.html"><img class="footer_logo" src="./images/header/logo.png" alt=""></a>
+        <div class="contact">
+            <a href="./contact.html"><img class="footer_logo" src="./images/header/logo.png" alt=""></a>
 
-        <h3>—— CONTACT ——</h3>
-        
-        <div class="footer_icon">
-            <a href="https://twitter.com/"><img src="./images/footer/twitter.png" alt=""></a>
-            <a href="https://www.facebook.com/"><img src="./images/footer/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/"><img src="./images/footer/instagram.png" alt=""></a>
+            <h3>—— CONTACT ——</h3>
+
+            <div class="footer_icon">
+                <a href="https://twitter.com/"><img src="./images/footer/twitter.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="./images/footer/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="./images/footer/instagram.png" alt=""></a>
+            </div>
         </div>
-    </div>
 
- 
+
     </footer>
 
-    
-    
-    </body>
-    
-    </html>
+
+    <script src="./js/lookbook.js"></script>
+</body>
+
+</html>

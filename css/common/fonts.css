@@ -14,3 +14,11 @@
     /* src: url("../../fonts/GenJyuuGothic-Light.eot"); */
     font-display: fallback; /*swap | fallback */
 }
+
+@font-face {
+    font-family: "Arial"; /*名稱自訂*/
+    src: url("../../fonts/Arial-Black-2.ttf");
+    /* src: url("../../fonts/GenJyuuGothic-Light.ttf"); */
+    /* src: url("../../fonts/GenJyuuGothic-Light.eot"); */
+    font-display: fallback; /*swap | fallback */
+}

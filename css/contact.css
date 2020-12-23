@@ -17,6 +17,7 @@ html{
     background-size: cover;
     box-sizing: border-box; */
     /* overflow-x: hidden; */
+    min-width: 320px;
 }
 
 
@@ -24,65 +25,92 @@ html{
 
 
 div.menubar{
-    width: 100%;
-    /* height: 100vh; */
-    /* border: 10px solid orange; */
-    background-image: url("../images/header/menubar.png");
-    background-position: center;
-    background-size: cover;
-    z-index: 40;
-    position: sticky;    
-    top: 0;
-    height: 99px;
-    background-repeat: no-repeat;
-    /* max-width: 1902px; */
-    min-width: 1140px;
+  width: 100%;
+  /* height: 100vh; */
+  /* border: 10px solid orange; */
+  background-image: url("../images/header/menubar.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 40;
+  position: sticky;
+  top: 0;
+  height: 99px;
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  /* min-width: 1140px; */
+  /* position: relative; */
 }
 
 .menubar > .menubar_icon{
-    position: absolute;
-    top: 28px;
-    right: 10px;
-    width: 140px;
-    display: flex;
-    justify-content: space-around;
-    /* border: 2px solid blue; */
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  width: 65px;
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid blue; */
 }
 
 
+
 .menubar > .menubar_icon > a{
-    width: 28px;
+  width: 28px;
 }
 
 
 .menubar > .menubar_icon > a img{
-    /* border: 2px solid rgb(171, 171, 233); */
-    width: 100%;
-    opacity: 0.5;
-    vertical-align: bottom; 
-    /* div包圖片下方完全貼齊  */
+  /* border: 2px solid rgb(171, 171, 233); */
+  width: 100%;
+  opacity: 0.5;
+  vertical-align: bottom; 
+  /* div包圖片下方完全貼齊  */
 }
-
-/* .menubar > .menubar_icon > a img{
-    width: 60%;
-    margin: 0 14px 0 14px;
-    opacity: 0.5;
-} */
-
-
-
 
 .menubar > .menubar_icon > a img:hover{
-    opacity: 1;
-    transition: all 200ms ease-in-out;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
 }
 
 
 
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .menubar > .menubar_icon{
+      top: 22px;
+  }      
+}
 
-/* div.menubar > img .menubar_img{
-    min-width: 1140px;
-} */
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+  .menubar > .menubar_icon{
+      right: 65px;
+      top: 16px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 321px){
+  .menubar > .menubar_icon{
+  right: 65px;
+  top: 15px;
+  }
+
+  .menubar > .menubar_icon > a {
+  width: 26px;
+  }
+}
+
+
+
+@media screen and (max-width: 320px){
+  .menubar > .menubar_icon{
+      right: 54px;
+      top: 9px;
+  }
+
+  .menubar > .menubar_icon > a {
+      width: 24px;
+  }
+}
 
 
 
@@ -93,29 +121,29 @@ div.menubar{
 }
 
 header{
-    min-width: 1140px;
+    /* min-width: 1140px; */
     width: 100%;
     margin-top: -20px;
-    /* max-width: 1902px; */
+    /* border: 1px solid red; */
+    height: calc(100vh - 79px);
+    min-height: 300px;
+    /* background-color: #ffe9e9; */
 }
 
+
+
+
 .banner{
-    height: 85vh;
-    min-height: 500px;
-    width: 100%;
-    min-width: 1140px;
     background-repeat: no-repeat;
-    /* background-position: center center; */
     background-image: url("../images/contact_page/banner3.png");
-    /* display: flex; */
     background-size: cover;
     position: relative;
+    min-height: 300px;
+    height: calc(100% - 60px);
+    width: 100%;
+    background-position: center;
     /* border: 2px solid red; */
-    
-}    
-
-
-
+}  
 
 
 .banner > .logo{
@@ -123,9 +151,10 @@ header{
     top: 20px;
     left: 20px; */
     /* max-width: 100%; */
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     padding: 20px;
-    position: fixed;    
+    position: fixed;
     top: 20px;
     left: 20px;
     /* margin-top: 0; */
@@ -146,7 +175,15 @@ header{
     opacity: 0.5;
 }
 
+img.logo{
+  /* border: 2px solid rgb(117, 241, 60); */
+  opacity: 0.6;
+}
 
+img.logo:hover{
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
 
 
 
@@ -155,27 +192,28 @@ header{
 /* --------------------下方導覽列-------------------- */
 
 div.nav_bg{
-    /* width: 100%; */
-    background-color: #ECC7C7;
-    /* border-radius: 0 0 30px 30px; */
     width: 100%;
+    background-color: #ECC7C7;
+    border-radius: 0 0 30px 30px;
+    /* width: 100%; */
     height: 60px;
     /* margin-bottom: 80px; */
     /* max-width: 1902px; */
-    min-width: 1140px;
+    /* min-width: 1140px; */
 }
 
 
-.nav_bg > nav.nav{
+.nav_bg > nav.navbox{
     /* border: 2px solid rgb(234, 0, 255); */
-    margin: 0 auto 90px;
+    margin: 0 auto;
     text-align: center;
     line-height: 40px;
-    width: 1140px;    
+    max-width: 1140px; 
+    padding: 0 30px;
     /* border: 1px solid rgb(23, 214, 240); */
 }
 
-.nav_bg > nav.nav > ul.nav_link_list{
+.nav_bg > nav.navbox > ul.nav_link_list{
     list-style: none;
     margin: 0;
     /* padding-left: 150px;
@@ -189,12 +227,12 @@ div.nav_bg{
     height: 60px;
     /* text-align: center;
     line-height:100px; */
-    width: 1140px;   
+    /* width: 1140px;    */
     /* border: 1px solid rgb(0, 255, 34); */
 }
 
 
-.nav_bg > nav.nav > ul.nav_link_list > li{
+.nav_bg > nav.navbox > ul.nav_link_list > li{
     width: 100%;
     height: 60px;
     margin: 0;
@@ -205,18 +243,19 @@ div.nav_bg{
 }
 
 
-.nav_bg > nav.nav > ul.nav_link_list > li.contact{
+.nav_bg > nav.navbox > ul.nav_link_list > li.contact{
     /* border: 1px solid red;  */
     background-color: rgb(231, 172, 172);
+    /* border-radius: 0 0 30px 0; */
 }
 
-.nav_bg > nav.nav > ul.nav_link_list > li.contact a:hover{
+.nav_bg > nav.navbox > ul.nav_link_list > li.contact a:hover{
     color: white;
 }
 
 
 
-.nav_bg > nav.nav > ul.nav_link_list > li > a{
+.nav_bg > nav.navbox > ul.nav_link_list > li > a{
     font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
     color: rgb(32, 1, 1);
     font-size: 25px;
@@ -224,11 +263,12 @@ div.nav_bg{
     padding: 10px;
     font-weight: 700;
     display: inline-block;
+    white-space: nowrap;
 }
 
 
 
-.nav_bg > nav.nav > ul.nav_link_list > li > a:hover {
+.nav_bg > nav.navbox > ul.nav_link_list > li > a:hover {
     /* background-color: #eb8686; */
     color:hsl(0, 83%, 72%);
 }
@@ -236,32 +276,523 @@ div.nav_bg{
 
 
 
+/* --------------------header RWD-------------------- */
 
-/* --------------------lookbook-------------------- */
+@media screen and (max-width: 991px) and (min-width: 768px){
+  div.menubar{
+      height: 79px;
+  }
+
+  header{
+      height: calc(100vh - 59px);
+      /* menubar 99px - margin-top 20px */
+  }
+
+  .banner{
+      height: calc(100% - 50px);
+  }
+
+
+  div.nav_bg{
+      height: 50px;
+      border-radius: 0 0 30px 30px;
+  }
+
+  .nav_bg > nav.navbox > ul.nav_link_list > li{
+      height: 51px;
+  }
+
+
+  .nav_bg > nav.navbox > ul.nav_link_list > li > a{
+      font-size: 20px;
+      padding: 3px;
+      /* border: 2px solid rgb(127, 127, 216); */
+  }
+
+
+
+  .banner > .logo{
+      width: 180px;
+      padding: 18px;
+  }
+
+  .banner > .banner_txt{
+      /* width: 70%;   */
+  }
+
+  }
+
+
+
+  @media screen and (max-width: 767px) and (min-width: 576px){
+  div.menubar{
+      height: 69px;
+      background-image: url("../images/header/menubar_notxt.png");
+  }
+
+  header{
+      height: calc(100vh - 49px);
+  }
+
+  .banner{
+  /* height: 500px; */
+      height: 100vh;
+      height: calc(100% - 30px);
+  }
+
+  .nav_bg > nav.navbox > ul.nav_link_list > li{
+      display: none;
+  }
+
+
+  div.nav_bg{
+      height: 30px;
+      border-radius: 0 0;
+  }
+
+
+  .banner > .logo{
+      width: 150px;
+      padding: 9px 12px 9px 12px;
+  }
+
+  .banner > .banner_txt{
+      width: 65%;  
+  }
+
+
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 321px){
+  div.menubar{
+      height: 69px;
+      background-image: url("../images/header/menubar_notxt.png");
+  }
+
+  header{
+      height: calc(100vh - 49px);
+  }
+
+  .banner{
+  /* height: 500px; */
+  /* height: 100vh; */
+      height: calc(100% - 30px);
+  }
+  
+
+  .nav_bg > nav.navbox > ul.nav_link_list > li{
+      display: none;
+  }
+
+  div.nav_bg{
+      height: 30px;
+      border-radius: 0 0;
+  }
+
+
+  .banner > .logo{
+      width: 100px;
+      padding: 5px 9px 5px 9px;
+      border-radius: 10px;
+      border-radius: 15px;
+      top: 12px;
+      left: 12px;
+  }
+
+
+  .banner > .banner_txt{
+      width: 80%;  
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 320px){
+  div.menubar{
+      height: 49px;
+      background-image: url("../images/header/menubar_notxt.png");
+  }
+
+  header{
+      height: calc(100vh - 29px);
+        /* menubar 99px - margin-top 20px */
+  }
+
+  .banner{
+  /* height: 500px; */
+  height: 100vh;
+  height: calc(100% - 20px);
+  }
+
+  .nav_bg > nav.navbox > ul.nav_link_list > li{
+      display: none;
+  }
+
+  div.nav_bg{
+      height: 20px;
+      border-radius: 0 0;
+      /* border: 2px solid blue; */
+  }
+
+
+  .banner > .logo{
+      width: 80px;
+      padding: 5px 9px 5px 9px;
+      border-radius: 10px;
+      top: 10px;
+      left: 10px
+  }
+
+  .banner > .banner_txt{
+      min-width: 85%;
+  }
+
+
+}
+
+
+
+
+/* -----------------back to top---------------- */
+
+.back_to_top {
+    background-color: #ecc7c7;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    color: #fff8f8;
+    font-size: 34px;
+    font-weight: 700;
+    display: none;
+    padding: 9px 14px;
+    position: fixed;
+    right: 30px;
+    text-decoration: none;
+    z-index: 999;
+    box-shadow: 2px 2px 5px rgba(20%,20%,40%,0.5);
+}
+
+.back_to_top:hover{
+    background-color: #eca2a2;
+}
+
+
+/* --------------------RWD hamburger 漢堡區塊-------------------- */
+
+
+#navbar-icon, .nav-main.close, .nav-links{
+  display: none;
+  }
+  
+  @media screen and (max-width: 767px){
+  
+  #navbar-icon {
+      /* border: solid 1px rgb(255, 0, 200); */
+      display: block;
+  }
+  
+  
+  
+  .navbar-open-icon {
+      display: block;
+      height: 45px;
+      width: 45px;
+      position: absolute;
+      top: 6px;
+      right: 17px;
+      cursor: pointer;
+      /* border: solid 1px rgb(153, 9, 153); */
+  }
+  
+  .line {
+      position: absolute;
+      left: 10px;
+      height: 3.5px;
+      width: 33px;
+      border-radius: 3px;
+      background: rgb(178 176 177);
+      /* border: solid 1px rgb(214, 152, 18); */
+  }
+  
+  .navbar-open-icon:hover .line {
+      background: #ECC7C7;
+  }
+  
+  .top {
+      top: 10px;
+  }
+  
+  .middle {
+      top: 22px;
+  }
+  
+  .bottom {
+      top: 34px;
+  }
+  
+  .nav-main {
+    position: fixed;
+    background: #ece4e7;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 480px;
+    min-height: 300px;
+    opacity: 1;
+    z-index: 999;
+    transition: all 0.4s ease;
+    border: 2px solid rgba(169, 165, 165, 0.23);
+    /* border: solid 3px rgb(253, 0, 0); */
+}
+  
+  
+  .close {
+      opacity: 0;
+      z-index: -10;
+      position: absolute;
+      /* border: solid 1px rgb(0, 0, 0); */
+      /* transform: translateX(100%); */
+  }
+  
+  .nodisplay {
+      display: block;
+      /* border: solid 1px rgb(145, 6, 6); */
+  }
+  
+  .nav {
+      /* margin-top: 20px; */
+      /* border: solid 1px rgb(251, 255, 10); */
+      /* overflow-y: hidden; */
+      /* min-height: 430px; */
+  }
+  
+  .nav-close-icon {
+      position: absolute;
+      right: 8px;
+      top: 11px;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      /* border: solid 1px rgb(10, 47, 255); */
+      /* 叉叉按鈕位置 */
+  }
+  
+  
+  
+  .nav-close-icon:hover .icon-line {
+      background: #ffffff;
+      /* border: solid 1px rgb(233, 7, 195); */
+  }
+  
+  .icon-line {
+      position: absolute;
+      top: 1em;
+      width: 40px;
+      height: 4px;
+      border-radius: 5px;
+      background: #261f1f;
+      transform: rotate(45deg);
+      /* border: solid 1px rgb(12, 247, 255); */
+  }
+  
+  .transform {
+      transform: rotate(-45deg);
+  }
+  
+  .nav-links {
+      height: calc(100vh - 20px);
+      max-height: 480px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-content: space-between;
+      /* overflow-y: scroll; */
+      /* border: solid 1px rgb(0, 0, 0); */
+      /* margin-bottom: 15px;
+      margin-top: 20px; */
+      padding: 40px;
+      z-index: 999;
+      /* transform: translateX(80%); */
+      max-height: 480px;
+      min-height: 300px;
+  }
+  
+  .nav-title span {
+      /* font-family: "Karma", serif; */
+      font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+      font-size: 15px;
+      padding-bottom: 4px;
+      border-bottom: 3px solid #ffffff;
+      color: #948d8d;
+      min-height: 80px;
+      font-size: 20px;
+  }
+  
+  
+  .nav-links a {
+      /* font-family: "Karma", serif; */
+      font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+      font-size: 28px;
+      letter-spacing: -1px;
+      font-weight: 300;
+      text-decoration: none;
+      color:#5e5959;
+      padding: 0.3em 0;
+      display: block;
+  }
+  
+  #thispage{
+    /* border: solid 1px rgb(0, 0, 0); */
+    padding-bottom: 2px;
+    color: #c58686;
+    border-bottom: 5px solid #ffffff;
+}
+
+  .nav-links a:hover{
+      color:#b1adad;
+      transition: all 200ms ease-in-out;
+  }
+  
+  
+  /*navlink hover effect*/
+  .slide-out {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+  }
+  
+  .slide-out::after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      width: 0%;
+      border-bottom: 5px solid #ffffff;
+      transition: 0.4s;
+  }
+  .slide-out::after:hover {
+      width: 100%;
+  }
+  
+  .slide-out:hover:after {
+      width: 100%;
+  }
+  
+  .nav-title {
+      /* border: solid 1px rgb(105, 105, 105); */
+  }
+  
+  /* .nav-social {
+  height: 100px;
+  padding-top: 25px;
+  margin-bottom: 70px;
+  color: #ffffff;
+  }
+  .nav-social i {
+  padding: 30px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  font-size: 18px;
+  }
+  .nav-social i:hover {
+  color: #ffffff;
+  transition: all 0.4s ease;
+  transform: scale(1.3);
+  } */
+  
+  }
+  
+  
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+
+  .nav-main {
+    width: 50%;
+    right: 0;
+    /* min-height: 100vh; */
+  }
+
+}
+
+
+
+@media screen and (max-width: 575px) and (min-width: 321px){
+  .navbar-open-icon{
+  top: 4px;
+  }
+}
+
+
+
+@media screen and (max-width: 320px){
+  .navbar-open-icon{
+      top: -1px;
+      right: 10px;
+  }
+
+  .nav-close-icon{
+      right: -1px;
+      top: 9px;
+  }
+
+  .icon-line{
+      right: 4px;
+      top: 10px;
+  }
+
+  .line{
+      width: 30px;
+  }
+
+  .middle{
+      top: 20px;
+  }
+
+  .bottom {
+      top: 30px;
+  }
+
+}
+
+  
+  
+  
+
+/* --------------------background-------------------- */
 
 
 body{
-    background-image: url(../images/lookbook_page/background_line.png);
+    /* background-image: url(../images/lookbook_page/background_line.png); */
     background-size: 100%;
+    background-color: rgb(250, 248, 248);
     /* background-repeat: no-repeat; */
     /* overflow-x: hidden; */
-    /* overflow-y: hidden; */
+    background-position: center;
  
 }
 
 
 
 main{
-    /* width: 1140px; */
+    width: 100%;
+    /* max-width: 1140px; */
     /* margin: 0 auto;
     margin-left: auto ;
     margin-right: auto ; */
     background-image: url(../images/contact_page/contact_bg2.png);
+    background-position: center;
     /* border: 1px solid rgb(11, 47, 250); */
     /* background-repeat: no-repeat; */
     background-size: cover;
     width: 100%;
-    min-width: 1140px;
+    /* min-width: 1140px; */
 
 }
 
@@ -270,26 +801,70 @@ main{
 
 
 
-/* -------------------contact 區塊-------------------- */
+/* -------------------title 區塊-------------------- */
 
 
 
 .title{
     /* border: 1px solid rgb(11, 47, 250); */
-    padding: 90px 0 60px 0;
+    margin: 0 0 50px 0;
     display: flex;
+    width: 100%;
+    padding: 0 50px;
     flex-direction: column;
 }
 
 
 .title img{
-    margin: auto;
-    height: 70px;
+    margin: 70px auto 0;
+    min-width: 200px;
+    max-height: 70px;
 }
 
 
+@media screen and (max-width: 767px) and (min-width: 576px){
+
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 321px){
+    .title{
+
+    }
+
+    .title img{
+
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .title{
+        /* border: 1px solid rgb(11, 47, 250); */
+
+    }
+
+    .title img{
+      
+    }
+}
+
+
+/* -------------------contact 區塊-------------------- */
+
+.contact_area{
+  /* border: 1px solid red; */
+  position: relative;
+  width: 100%;  
+}
+
 .contact_form{
-position: relative;
+/* position: relative; */
+max-width: 550px;
+min-width: 300px ;
+margin: auto;
+padding: 0 25px;
 }
 
 /* .contact_form > form{
@@ -306,7 +881,7 @@ position: relative;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 100%;
     margin: auto;
     padding: 15px 50px 28px 50px;
     background-color: #f7f5f5;
@@ -318,7 +893,6 @@ position: relative;
     /* border: 1px solid rgb(22, 105, 230); */
     margin: 14px 0 5px 0;
     font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
-
     /* font-size: 800; */
     font-size: 23px;
 }
@@ -355,33 +929,37 @@ position: relative;
     color: rgb(61, 52, 52);
     outline: none;
     padding: 10px;
-    font-size: 25px;
+    font-size: 18px;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
 }
 
 
 .contact_form > form > textarea[name="message"]{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 200px;
     border: none;
     border: 2px solid #dfdcdc;
     border-radius: 25px;
+    color: rgb(61, 52, 52);
     outline: none;
     padding: 10px;
-    font-size: 25px;
+    font-size: 18px;
     resize : none;
+    font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
+
 }
 
 
 
 
 .contact_form > form > input[type="submit"]{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
     width: 125px;
     height: 42px;
     margin: 25px auto 0 auto;
     font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
-
     font-size: 18px;
     border: none;
     text-decoration: none;
@@ -403,9 +981,22 @@ position: relative;
 
 
 .people{
+    
+    /* border: 1px solid red; */
     position: absolute;
-    right: 200px;
-    bottom: 0;
+    right: 0%;
+    bottom: 0%;
+    padding-right: 100px;
+    /* right: 200px; */
+    /* bottom: 0; */
+    /* display: none; */
+    /* display: block; */
+    /* width: 100%; */
+}
+
+.people img{
+  max-width: 200px;
+  /* border: 1px solid red; */
 }
 
 
@@ -414,6 +1005,149 @@ position: relative;
 
 
 
+@media screen and (max-width: 991px) and (min-width: 768px){
+    
+  .contact_form > form > input{
+    padding-right: 50px;
+  }
+
+  .contact_form > form > textarea[name="message"]{
+    padding-right: 50px;
+  }
+
+  .people{
+    padding-right: 25px;
+  }
+    
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+  
+  .contact_form > form > input{
+    padding-right: 70px;
+  }
+  
+  .contact_form > form > textarea[name="message"]{
+    padding-right: 70px;
+  }
+
+  .people{
+    padding-right: 20px;
+  }
+
+  .people img{
+    max-width: 150px;
+  }
+  
+
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 321px){
+  
+  .contact_form > form{
+    padding: 10px 40px 20px 40px;
+  }
+  
+  
+  .contact_form > form > label{
+    margin: 10px 0 4px 0;
+    font-size: 18px;
+  }
+
+
+
+  .contact_form > form > label::before{
+    width: 22px;
+    height: 22px;
+  }
+
+  .contact_form > form > input{
+    padding-right: 50px;
+    height: 30px;
+  }
+
+  .contact_form > form > textarea[name="message"]{
+    height: 135px;
+    padding-right: 50px;
+  }
+
+  .contact_form > form > input[type="submit"]{
+    width: 90px;
+    height: 35px;
+    font-size: 17px;
+    margin: 20px auto 0 auto;
+  }
+
+    
+
+  .people{
+    padding-right: 10px;
+  }
+
+  .people img{
+    max-width: 100px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 320px){
+
+  .contact_form{
+    padding: 0 23px;
+  }
+
+  .contact_form > form{
+    padding: 9px 22px 15px 22px;
+  }
+  
+  
+  .contact_form > form > label{
+    margin: 10px 0 4px 0;
+    font-size: 18px;
+  }
+
+  .contact_form > form > input{
+    height: 30px;
+  }
+
+  .contact_form > form > label::before{
+    width: 22px;
+    height: 22px;
+  }
+
+  .contact_form > form > input{
+    padding-right: 30px;
+  }
+
+  .contact_form > form > textarea[name="message"]{
+    height: 100px;
+    padding-right: 30px;
+  }
+
+  .contact_form > form > input[type="submit"]{
+    width: 90px;
+    height: 35px;
+    font-size: 17px;
+    margin: 14px auto 0 auto;
+  }
+
+  .people img{
+    max-width: 100px;
+  }
+
+  .people{
+    padding-right: 10px;
+  }
+
+  .people img{
+    max-width: 70px;
+  }
+
+}
 
 
 
@@ -431,69 +1165,137 @@ position: relative;
 /* --------------------footer 區塊------------------- */
 
 footer{
-    width: 1140px;
+    /* width: 1140px; */
+    width: 100%;
     margin: 0px auto;
     /* border: 1px solid rgb(10, 230, 76); */
     padding: 50px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 50px;
-}
-
-
-footer > .contact{
+  }
+  
+  
+  footer > .contact{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0px auto;
     text-align: center;
     /* border: 1px solid rgb(32, 10, 230); */
-    
+  
     /* display: inline-block; */
-}
-
-footer > .contact .footer_logo{
+  }
+  
+  footer > .contact .footer_logo{
     margin: 10px;
     width: 70%;
     /* border: 1px solid rgb(28, 230, 10); */
     opacity: 0.7;
-}
-
-footer > .contact .footer_logo:hover{
+  }
+  
+  footer > .contact .footer_logo:hover{
     opacity: 1;
     transition: all 200ms ease-in-out;
-}
-
-
-footer > .contact a{
+  }
+  
+  
+  footer > .contact a{
     display: inline-block;
     /* border: 1px solid rgb(230, 190, 10); */
     font-size: 0px;
-}
-
-
-footer > .contact h3{
+  }
+  
+  
+  footer > .contact h3{
     /* border: 1px solid rgb(10, 142, 230); */
     font-family: "筑紫A丸ゴシック","GenJyuuGothic-Light","Heiti TC","Microsoft JhengHei","Calibri Light","sans-serif";
-
     font-size: 15px;
     /* display: inline; */
     margin: 10px 0 10px 0;
     color: rgb(97, 96, 96);
-}
-
-
-footer .footer_icon img{
+  }
+  
+  
+  footer .footer_icon img{
     /* border: 1px solid rgb(230, 10, 113); */
-    width: 30px;
-    height: 30px;
+    width: 40%;
+    /* width: 30px; */
+    /* height: 30px; */
     margin: 10px 15px 10px 15px;
     display: inline-block;
     opacity: 0.7;
-}
-
-footer .footer_icon img:hover{
+  }
+  
+  footer .footer_icon img:hover{
     opacity: 1;
     transition: all 200ms ease-in-out;
-}
-
-
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 767px) and (min-width: 576px){
+    footer > .contact .footer_logo{
+      width: 60%;
+    }
+  
+    footer > .contact h3 {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+  
+  footer .footer_icon img {
+    width: 45%;
+    margin: 10px 5px;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 575px) and (min-width: 321px){
+    footer > .contact .footer_logo{
+      width: 55%;
+    }
+  
+    footer > .contact h3 {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+  
+    footer .footer_icon{
+      /* border: 1px solid rgb(25, 10, 230); */
+    }
+  
+    footer .footer_icon img {
+    width: 45%;
+    margin: 10px 5px;
+    /* border: 1px solid rgb(190, 230, 10); */
+    }
+  
+    .footer_icon a{
+      /* border: 1px solid rgb(230, 10, 113); */
+    }
+  
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 320px){
+    footer > .contact .footer_logo{
+      width: 55%;
+    }
+  
+    footer > .contact h3 {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+  
+  footer .footer_icon img {
+    width: 45%;
+    margin: 10px 5px;
+    }
+  
+  }
+  

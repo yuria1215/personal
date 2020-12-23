@@ -9,35 +9,55 @@
     <link href="./css/contact.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/header/web_icon.png" />
 
-    <style>
-
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
+
 <body>
 
-
+    <!-- --------------------meaubar-------------------- -->
 
 
     <div class="menubar">
-        <!-- <img src="./images/header/menubar.png" class="menubar_img" alt=""> -->
         <div class="menubar_icon">
-            <a href="#"><img src="./images/header/icon1_menu.png" alt=""></a>
             <a href="#"><img src="./images/header/icon2_people.png" alt=""></a>
             <a href="#"><img src="./images/header/icon3_cart.png" alt=""></a>
         </div>
+
+        <!-- --------------------漢堡區塊-------------------- -->
+
+        <div id="navbar-icon">
+            <div class="navbar-open-icon">
+                <div class="line top"></div>
+                <div class="line middle"></div>
+                <div class="line bottom"></div>
+            </div>
+        </div>
+
+        <div class="nav-main close">
+            <div class="nav-close-icon">
+                <div class="icon-line"></div>
+                <div class="icon-line transform"></div>
+            </div>
+
+            <div class="nav-links">
+                <p class="nav-title"><span>menu</span></p>
+                <div class="nav-line"></div>
+                <a href="./style.html"><span class="slide-out">STYLE</span></a>
+                <a href="./shoplist.html"><span class="slide-out">SHOP LIST</span></a>
+                <a href="./lookbook.html"><span class="slide-out">LOOKBOOK</span></a>
+                <a href="./pickup.html"><span class="slide-out">PICK UP</span></a>
+                <a href="./contact.html"><span id="thispage" class="slide-out">CONTACT</span></a>
+            </div>
+        </div>
+
     </div>
 
-
-
+    <!-- --------------------banner-------------------- -->
 
     <header>
-
-
         <div class="banner">
-
-
 
             <div class="logo">
                 <a href="./index.html"><img src="./images/header/logo.png" class="logo" alt=""></a>
@@ -46,100 +66,76 @@
             <div class="banner_txt">
                 <img src="./images/header/banner_txt.png" class="banner_txt" alt="">
             </div>
-
-
-            <!-- <div class="br_txt">
-                <h1>LADY'S CLOSET TOKYO</h1>
-            </div> -->
-
-            <!-- 背景圖片 -->
-
         </div>
 
-        <!-- <div class="banner"></div> -->
-
-
         <div class="nav_bg">
-
-            <nav class="nav">
-
+            <nav class="navbox">
                 <ul class="nav_link_list">
-  
                     <li><a href="./style.html">STYLE</a></li>
                     <li><a href="./shoplist.html">SHOP LIST</a></li>
                     <li><a href="./lookbook.html">LOOKBOOK</a></li>
                     <li><a href="./pickup.html">PICK UP</a></li>
                     <li class="contact"><a href="./contact.html">CONTACT</a></li>
-                
                 </ul>
             </nav>
         </div>
-
     </header>
 
+    <a href="#top" class="back_to_top">^</a>
 
+    <!-- ------------------contact----------------- -->
 
 
     <main>
 
-        
+
 
         <div class="title">
             <img src="./images/contact_page/contact_title.png" alt="" class="title.img">
         </div>
 
-        
 
-        <div class="contact_form">
-            <form action="#">
-                <label for="name">NAME</label>
-                <input type="text" id=name>
-                <label for="email">E-MAIL</label>
-                <input type="text" id=email>
-                <label for="title">TITLE</label>
-                <input type="text" id=title>
-                <label for="message">MESSAGE</label>
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value=SEND>
+        <div class="contact_area">
+            <div class="contact_form">
+                <form action="#">
+                    <label for="name">NAME</label>
+                    <input type="text" id=name>
+                    <label for="email">E-MAIL</label>
+                    <input type="text" id=email>
+                    <label for="title">TITLE</label>
+                    <input type="text" id=title>
+                    <label for="message">MESSAGE</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value=SEND>
+                </form>
 
+            </div>
 
-                <div class="people">
-                  <img src="./images/contact_page/poeple.png" alt="">
-                 </div>
-
-
-
-            </form>
-
-
-
-
-       
-
-
+            <div class="people">
+                <img src="./images/contact_page/poeple1.png" alt="">
+            </div>
 
         </div>
-        
 
 
 
 
         <footer>
-        
-                <div class="contact">
-                    <a href="./contact.html"><img class="footer_logo" src="./images/header/logo.png" alt=""></a>
-        
-                    <h3>—— CONTACT ——</h3>
-                    
-                    <div class="footer_icon">
-                        <a href="https://twitter.com/"><img src="./images/footer/twitter.png" alt=""></a>
-                <a href="https://www.facebook.com/"><img src="./images/footer/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com/"><img src="./images/footer/instagram.png" alt=""></a>
-                    </div>
+
+            <div class="contact">
+                <a href="./contact.html"><img class="footer_logo" src="./images/header/logo.png" alt=""></a>
+
+                <h3>—— CONTACT ——</h3>
+
+                <div class="footer_icon">
+                    <a href="https://twitter.com/"><img src="./images/footer/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/"><img src="./images/footer/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img src="./images/footer/instagram.png" alt=""></a>
                 </div>
-        
+            </div>
+
         </footer>
-        
+
 
 
 
@@ -151,8 +147,8 @@
 
 
 
-    
-    
+    <script src="./js/contact.js"></script>
+
 </body>
-    
+
 </html>
